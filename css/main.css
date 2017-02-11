@@ -1,0 +1,41 @@
+.image {
+  border: 0;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.image img {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 990px) {
+  .div-text {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .div-right {
+    float: right !important;
+  }
+
+  .div-text {
+    padding-top: 100px;
+  }
+}
+
+.profile-thumbnail {
+    height: 256px;
+    width: 256px;
+}
+
+
