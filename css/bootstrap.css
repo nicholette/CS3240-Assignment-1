@@ -1,0 +1,11 @@
+.navbar {
+  border-radius: 0px;
+}
+
+.navbar-inverse {
+  border-radius: 0px;
+}
+
+body {
+  font-family: "Source Sans Pro";
+}
