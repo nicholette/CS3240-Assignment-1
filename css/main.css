@@ -26,6 +26,7 @@ footer {
   border-radius: 4px;
   display: inline-block;
   position: relative;
+  overflow: hidden;
 }
 
 .image img {
@@ -38,7 +39,22 @@ footer {
 
   max-width: 100%;
   height: auto;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+
+.image:hover img {
+  -webkit-transform: scale3d(1.1, 1.1, 1);
+  -moz-transform: scale3d(1.1, 1.1, 1);
+  -ms-transform: scale3d(1.1, 1.1, 1);
+  -o-transform: scale3d(1.1, 1.1, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
 
 .div-input label {
   width: 100%;
@@ -84,9 +100,14 @@ input[type="submit"] {
   }
 }
 
+.profile-row {
+  padding: 50px 0px;
+}
+
 .profile-thumbnail {
     height: 256px;
     width: 256px;
+    opacity: 1.0;
 }
 
 

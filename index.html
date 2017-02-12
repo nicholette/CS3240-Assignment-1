@@ -48,11 +48,11 @@
         </div>
 
         <div class="about-me">
-            <div class="row">
+            <div class="row profile-row">
                 <div class="col-md-2 col-lg-2"></div>
                 <div class="col-md-4 col-lg-4">
                     <div class="text-center div-text">
-                        <h2>Hi. I am Nicholette.</h2>
+                        <h2 id="text-first">Hi. I am Nicholette.</h2>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col-md-8 col-lg-8 div-right">
                     <div class="text-center div-text">
-                        <h2>I like the sea..</h2>
+                        <h2 id="text-second">I like the sea..</h2>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 image image-left"><img src="img/image2.jpg" alt="" /></div>
@@ -75,7 +75,7 @@
             <div class="row">
                 <div class="col-md-8 col-lg-8">
                     <div class="text-center div-text">
-                        <h2>cats..</h2>
+                        <h2 id="text-third">cats..</h2>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 image"><img src="img/image3.jpg" alt="" /></div>
@@ -84,7 +84,7 @@
             <div class="row">
                 <div class="col-md-8 col-lg-8 div-right">
                     <div class="text-center div-text">
-                        <h2>coffee..</h2>
+                        <h2 id="text-fourth">coffee..</h2>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 image"><img src="img/image4.jpg" alt="" /></div>
@@ -93,7 +93,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="text-center div-text">
-                        <h2>and desserts.</h2>
+                        <h2 id="text-fifth">and desserts.</h2>
                     </div>
                 </div>
                 <div class="col-md-4 image"><img src="img/image5.jpg" alt="" /></div>
@@ -104,4 +104,15 @@
             <p class="text-center">&copy; Nicholette Li</p>
         </footer>
     </body>
+
+    <script>
+        $(document).ready(function () {
+            var interval = 800;
+            $("#text-first").slideUp(300).delay(400).fadeIn("slow");
+            $("#text-second").slideUp(300).delay(2 * interval).fadeIn("slow");
+            $("#text-third").slideUp(300).delay(3 * interval).fadeIn("slow");
+            $("#text-fourth").slideUp(300).delay(4 * interval).fadeIn("slow");
+            $("#text-fifth").slideUp(300).delay(5 * interval).fadeIn("slow");
+        });
+    </script>
 </html>

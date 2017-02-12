@@ -8,6 +8,8 @@
         <!-- jquery CDN -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
+        <!-- jquery form validation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -53,15 +55,15 @@
                 <h1>Get in touch</h1>
             </div>
             <div>
-                <form method="post" action="#">
+                <form id="contact-form" method="post" action="#">
                     <div class="row">
                         <div class="col-md-6 div-input">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name" value="" required=true>
+                            <input type="text" name="name" id="name" value="">
                         </div>
                         <div class="col-md-6 div-input">
                             <label for="email">Email:</label>
-                            <input type="text" name="email" id="email" value="" required=true>
+                            <input type="text" name="email" id="email" value="">
                         </div>
                     </div>
                     <div class="row">
@@ -81,4 +83,27 @@
             <p class="text-center">&copy; Nicholette Li</p>
         </footer>
     </body>
+
+    <script>
+        $(document).ready(function () {
+            $('#contact-form').validate({
+                rules: {
+                    name: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                submitHandler: function (form) {
+                    alert("Thanks for reaching out!\n I'll get back to you soon.");
+                    return false;
+                }
+            });
+        });
+    </script>
 </html>
