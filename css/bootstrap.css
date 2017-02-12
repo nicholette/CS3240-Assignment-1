@@ -6,6 +6,10 @@
   border-radius: 0px;
 }
 
-body {
-  font-family: "Source Sans Pro";
+form > .row {
+  padding: 0px 50px;
+}
+
+form > .row > .div-input {
+  padding: 10px;
 }
