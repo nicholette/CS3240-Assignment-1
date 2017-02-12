@@ -45,6 +45,7 @@ input[type="submit"] {
   border-radius: 20px;
   padding: 5px 15px;
   border-width: 1px;
+  text-transform: uppercase;
 }
 
 
