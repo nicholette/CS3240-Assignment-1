@@ -13,3 +13,10 @@ form > .row {
 form > .row > .div-input {
   padding: 10px;
 }
+
+.carousel, .carousel-inner{
+  max-width: 800px !important;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
